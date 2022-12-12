@@ -372,6 +372,30 @@ def collect_instructions(soup):
 
     return steps
 
+def collect_keywords(soup):
+    '''
+    Searches BeautifulSoup data to try and determine keywords & articles.
+
+    Parameters:
+        soup: BeautifulSoup parsed data
+
+    Returns:
+        keywords (list): list containing ingredient keywords
+        articles (list): list containing ingredient articles
+    '''
+    script_data = json.loads(soup.find('script', class_ = 'yoast-schema-graph').text)['@graph'][0]
+    keywords = script_data['keywords']
+    articles = script_data['articleSection']
+
+    # Need to fix one article and remove one article
+    for i, article in enumerate(articles):
+        if article == 'Bean &amp; Grain Recipes':
+            articles[i] = 'Bean & Grain Recipes'
+        elif article == 'Recipes':
+            keywords[i].pop()
+
+    return keywords, articles
+
 def recipe_scraper(url):
     '''
     Initiates an HTTP GET request to the provided URL. Scrapes webpage for data
@@ -405,9 +429,7 @@ def recipe_scraper(url):
     steps = collect_instructions(soup)
 
     # Collect keywords & article sections
-    script_data = json.loads(soup.find('script', class_ = 'yoast-schema-graph').text)['@graph'][0]
-    keywords = script_data['keywords']
-    articles = script_data['articleSection']
+    keywords, articles = collect_keywords(soup)
 
     return {'name': name,
             'cost': {'recipe': recipe_cost,
@@ -424,31 +446,273 @@ def recipe_scraper(url):
             'keywords': keywords,
             'article': articles}
 
+def clean_recipes(recipes):
+    '''
+    Removes recipes that are missing data
+
+    Parameters:
+        recipes (dict): Dictionary of all the recipes
+
+    Returns:
+        recipes (dict): Dictionary of all the recipes with bad recipes removed
+    '''
+    clean_recipes = {recipe_name:recipe_data for recipe_name,recipe_data in recipes.items()
+                     if len(recipe_data['ingredients']) > 0 and len(recipe_data['instructions']) > 0}
+
+    return clean_recipes
+
+def grocery_list(recipes):
+    '''Builds a grocery list for provided recipes
+
+    Goes through each recipe to determine amount and category of each
+    ingredient that is needed. Determines category of each ingredient.
+
+    Parameters:
+        recipes (list): List of recipe dictionaries
+
+    Returns:
+        grocery_list (dict): Categorized ingredients with quantities needed
+    '''
+    grocery_list = []
+    # groery_list = [['rice', 1, 'cup'], ['apple, 2, 'oz'], ['flour', 2, 'oz']]
+    for recipe in recipes:
+        for ingredient, data in recipe['ingredients'].items():
+            temp = [ingredient, data['amount'], data['unit']]
+            new_grocery = True
+            for i, grocery in enumerate(grocery_list):
+                if grocery[0] == temp[0] and grocery[2] == temp[2]:
+                    grocery_list[i][1] += temp[1]
+                    new_grocery = False
+                    break
+            if new_grocery == True:
+                grocery_list.append(temp)
+
+        grocery_list.sort(key=lambda x: x[1]) # Alphabetical sort
+
+def keywords_counter(recipes):
+    '''
+    Counts the number of times each keyword and article appears
+
+    Paramters:
+        recipes (dict): Dictinoary from recipes based on keywords and articles
+
+    Returns:
+        keywords_articles (dict): Dictionary containing count of every keyword & article
+    '''
+    keywords_articles = {}
+    for recipe in recipes.values():
+        for keyword in recipe['keywords']:
+            if keyword not in keywords_articles:
+                keywords_articles[keyword] = 1
+            else:
+                keywords_articles[keyword] += 1
+        for article in recipe['article']:
+            if article not in keywords_articles:
+                keywords_articles[article] = 1
+            else:
+                keywords_articles[article] += 1
+
+    return keywords_articles
+
+def keywords_queuer(keywords_articles):
+    '''
+    Builds queue of keywords & articles from most to least frequently used
+
+    Parameters:
+        keywords_artiles (dict): Dictionary containing count of every keyword & article
+
+    Returns:
+        keywords_queue (list): Queue of keywords & articles from most to least frequent
+    '''
+
+    keywords_queue = list(keywords_articles.items())
+    keywords_queue.sort(key=lambda x: x[1], reverse=True)
+    keywords_queue = [keyword[0] for keyword in keywords_queue]
+    return keywords_queue
+
+def answer():
+    '''Asks user for answer until yes/no is entered
+
+    Asks for user's answer. Does simple formatting of string to provide some leeway.
+    If answer cannot be determined, asks user to enter new answer.
+
+    Parameters:
+        None
+
+    Returns:
+        bool: returns True if answer is 'yes' and False if answer is 'no'
+    '''
+
+    yes_list = ['yes', 'yep','yeah','yea','y','aye','surely','for sure','of course','definitely','certainly','absolutely','affirmative','you bet', 'you betcha', 'yes sir', 'yes ma\'am']
+    no_list = ['no','nope','nay', 'nan','never','n','noway', 'no way','absolutely not', 'of course nort', 'certainly not', 'negative', 'not a chance']
+
+    yesno = input().strip().lower()
+    if yesno in yes_list:
+        return True
+    elif yesno in no_list:
+        return False
+    else:
+        print(f'Please respond with \'yes\' or \'no\': ',end = '')
+        return answer()
+
+def recipe_tree(recipes):
+    '''
+    Builds a tree data structure from recipes based on keywords and articles
+
+    Parameters:
+        recipes (dict): Dictionary of all recipes
+
+    Returns:
+        tree: Tree data structure
+    '''
+
+    # First get dictionary containing every keyword and article & count of how often they appear
+    keywords_articles = keywords_counter(recipes)
+
+    # Build queue of keywords to use from most to to least frequent words
+    keywords_queue = keywords_queuer(keywords_articles)
+
+    # Build recipe dictionaries which have and don't have most frequent keyword
+    contains_keyword = {}
+    missing_keyword = {}
+    for name, recipe in recipes.items():
+        if keywords_queue[0] in recipe['keywords']:
+            recipe['keywords'].remove(keywords_queue[0])
+            contains_keyword[name] = recipe
+        elif keywords_queue[0] in recipe['article']:
+            recipe['article'].remove(keywords_queue[0])
+            contains_keyword[name] = recipe
+        else:
+            missing_keyword[name] = recipe
+
+    # Only want to narrow down recipes to <= 10 to give broader list of recommendations
+    if len(contains_keyword) <= 10:
+        contains_branch = ([recipe for recipe in contains_keyword], None, None)
+    else:
+        contains_branch = recipe_tree(contains_keyword)
+
+    if len(missing_keyword) <= 10:
+        missing_branch = ([recipe for recipe in missing_keyword], None, None)
+    else:
+        missing_branch = recipe_tree(missing_keyword)
+
+    tree = (keywords_queue[0], contains_branch, missing_branch)
+    return tree
+
+def saveTree(tree, treeFile):
+    '''Saves tree to TreeFile using desired format
+
+    Accepts TreeFile file handle to allow program to work recursively.
+    Writes tree to file in following format:
+        Internal node
+        'question text here'
+        Leaf
+        'answer1 text here'
+        Leaf
+        'answer2 text here'
+        ...
+
+    Parameters:
+        tree (tuple): The 20 Questions tree tuple that is to be saved to a file
+        TreeFile (file handle): File handle we are writing to
+
+    Returns:
+        None
+    '''
+    if (tree[1] == None) and (tree[2] == None): #If tree node is answer/leaf
+        print('Leaf', file = treeFile)
+        print(tree[0], file = treeFile)
+    else: #If tree node is question/internal
+        print('Internal Node', file = treeFile)
+        print(tree[0], file = treeFile)
+        saveTree(tree[1], treeFile)
+        saveTree(tree[2], treeFile)
+
+def saveTreeWrap(tree, treeFile):
+    '''Opens and closes file for saveTree function
+
+    Parameters:
+        tree (tuple): The 20 Questions tree tuple that is to be saved to a file
+        TreeFile (file handle): File handle we are writing to
+
+    Returns:
+        None
+    '''
+    treeFile = open(treeFile, 'w')
+    saveTree(tree, treeFile)
+    treeFile.close()
+
+def loadTree(treeFile):
+    '''Loads tree from treeFile
+
+    Accepts TreeFile file handle to allow program to work recursively.
+    Reads tree from file with the following format:
+        Internal node
+        'question text here'
+        Leaf
+        'answer1 text here'
+        Leaf
+        'answer2 text here'
+        ...
+
+    Parameters:
+        TreeFile (file handle): File handle we are reading from
+
+    Returns:
+        tree (tuple): tree read from file
+    '''
+    line = treeFile.readline().strip()
+    if line == 'Internal Node':
+        question = treeFile.readline().strip()
+        node1 = loadTree(treeFile)
+        node2 = loadTree(treeFile)
+        return (question, node1, node2)
+    else: #line == 'Leaf'
+        return (treeFile.readline().strip(), None, None)
+
+def loadTreeWrap(treeFile):
+    '''Opens and closes file for loadTree function
+
+    Parameters:
+        tree (tuple): The 20 Questions tree tuple that is to be saved to a file
+        TreeFile (file handle): File handle we are writing to
+
+    Returns:
+        tree (tuple): tree read fromfile
+    '''
+    treeFile = open(treeFile, 'w')
+    loadTree(treeFile)
+    treeFile.close()
 
 
 def main():
 
-    try:
-        recipe_urls = read_csv('recipe_urls.csv')[0]
-    except:
-        recipe_urls = recipe_crawler()
-        write_csv('recipe_urls.csv', list(recipe_urls))
-
-    try:
+    try: # Check cache for recipe data
         recipe_data = read_json('recipe_data.json')
-    except:
+    except: # Scrape new recipe data
+        try: # Check cache for recipe URLs
+            recipe_urls = read_csv('recipe_urls.csv')[0]
+        except: # Crawl for new recipe URLs
+            recipe_urls = recipe_crawler()
+            write_csv('recipe_urls.csv', list(recipe_urls))
         recipe_data = {}
         for recipe_url in recipe_urls:
             recipe_temp = recipe_scraper(recipe_url)
             recipe_temp['url'] = recipe_url
             recipe_name = recipe_temp.pop('name')
             recipe_data[recipe_name] = recipe_temp
-
+        recipe_data = clean_recipes(recipe_data)
         write_json('recipe_data.json', recipe_data)
 
+
+    try:
+        tree = loadTreeWrap('recipeTree.txt')
+    except:
+        tree = recipe_tree(recipe_data)
+        saveTreeWrap(tree, 'recipeTree.txt')
+
+
     print('sup\nsup\nsup')
-
-
 
 
 

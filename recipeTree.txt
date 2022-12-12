@@ -1,0 +1,794 @@
+Internal Node
+Recipes
+Internal Node
+Egg Free Recipes
+Internal Node
+Soy Free Recipes
+Internal Node
+Gluten free Recipes
+Internal Node
+Vegetarian Recipes
+Internal Node
+Under $1 per serving
+Internal Node
+Recipes under $3
+Internal Node
+Dairy Free Recipes
+Internal Node
+Vegan Recipes
+Internal Node
+Vegetable Recipes
+Leaf
+['Moroccan Spiced Sweet Potatoes', 'Oven Baked Steak Fries', 'Southwest Cauliflower Rice', 'Easy Roasted Brussels Sprouts', 'Pico de Gallo', 'Smoky Maple Roasted Acorn Squash', 'Chili Roasted Sweet Potatoes', 'Spicy Sweet Potato Fries', 'Pickled Red Onions']
+Leaf
+['Tomato Basil Vinaigrette', 'Lemon Dill Tahini Dressing', 'Tomato Rice', 'Lemon Tahini Dressing', 'Classic Three Bean Salad', 'Secret Ingredient Tomato Soup', 'Homemade Chili Seasoning']
+Leaf
+['Smoky Roasted Breakfast Potatoes']
+Internal Node
+Quick Recipes
+Leaf
+['Lemon Butter Green Beans', 'Scallion Herb Cream Cheese Spread', 'Cheesy Pinto Beans', 'Pineapple Protein Smoothie', 'Simple Sautéed Vegetables', 'Easy Caramel Sauce', 'Pumpkin Cheesecake Mousse', 'Sesame Cucumber Salad', 'Curry Chickpea Salad']
+Leaf
+['Braised Red Cabbage', 'Garlic Herb Mashed Potatoes', 'Small Batch Crunchy Candied Walnuts']
+Internal Node
+Recipes under $5
+Internal Node
+Side Dish Recipes
+Leaf
+['Roasted Radishes', 'Spinach Rice with Feta', 'Perfect Oven Roasted Broccoli', 'Chimichurri Chickpea Salad', 'Baked Sweet Potatoes', 'Garlic Herb Mashed Cauliflower', 'Rosemary Roasted Potatoes', 'Loaded Smashed Potatoes']
+Leaf
+['Curried Red Lentil and Pumpkin Soup', 'No Churn Balsamic Peach Ice Cream', 'Slow Cooker Vegetarian Lentil Chili', 'Charred Corn and Zucchini Salad', 'Cucumber and Black Bean Salad', 'Blueberry Sauce', 'Coconut Curry Hummus']
+Leaf
+['Easy Minestrone Soup', 'No-Churn Strawberry Ice Cream', 'Cheesy Scallion Stuffed Jalapeños', 'Smoky Potato Chickpea Stew', 'Guacamole']
+Internal Node
+Vegetable Recipes
+Internal Node
+Olive Oil
+Internal Node
+Recipes under $10
+Internal Node
+Side Dish Recipes
+Leaf
+['Autumn Kale and Apple Salad', 'Roasted Spaghetti Squash', 'Roasted Cauliflower and Quinoa Salad', 'Super Fresh Cucumber Tomato Salad', 'Spinach Chickpea and Quinoa Salad', 'Butternut Squash Salad', 'Chipotle Butternut Squash and Quinoa Salad', 'Mediterranean Coleslaw']
+Leaf
+['Butternut Squash Curry', 'Lentils with Creamy Mushroom Gravy', 'Curry Roasted Vegetable Bowls', 'Slow Simmered Black Eyed Peas and Greens', 'Cheesy Cauliflower and Potato Soup']
+Leaf
+['Roasted Delicata Squash', 'Roasted Summer Vegetables']
+Leaf
+['Autumn Quinoa Salad with Lemon Turmeric Dressing', 'Sweet Crunch Winter Salad', 'Creamy Lentil Vegetable Soup', 'Crispy Potatoes with Lemon Dill Tahini Dressing', 'Roasted Vegetable Salad Meal Prep', 'Autumn Kale and Sweet Potato Salad']
+Internal Node
+Bean & Grain Recipes
+Leaf
+['Enfrijoladas – Tortillas in Black Bean Sauce', 'Roasted Cauliflower Taco Bowls', 'Quickie Black Eyed Peas and Greens', 'Kale and White Bean Power Bowls', 'Rice Cooker Spanish Chickpeas and Rice', 'Smoky Quinoa and Black Bean Salad', 'Scallion Herb Chickpea Salad', 'Creamy Coconut Curry Lentils with Spinach']
+Leaf
+['Secret Ingredient Cherry Almond Smoothie', 'No Sugar Added Blueberry Almond Overnight Oats', 'How To Make Sour Cream', 'Homemade Salted Caramel Iced Coffee']
+Internal Node
+Meat Recipes
+Internal Node
+Main Dish Recipes
+Internal Node
+Chicken Recipes
+Internal Node
+Chicken Breast
+Internal Node
+Chicken Breast Recipes
+Internal Node
+Under $3 per serving
+Internal Node
+Garlic
+Leaf
+['Tomato Basil Chicken', 'One Pot Lemon Artichoke Chicken and Rice', 'Slow Cooker Chicken Tortilla Soup', 'Yogurt Marinated Chicken', 'Chimichurri Chicken Kebabs', 'Sweet Chili Chicken Stir Fry Bowls']
+Leaf
+['Easy Pesto Chicken and Vegetables', 'Baked Pizza Chicken', 'Chipotle Lime Chicken and Rice', 'Sheet Pan Pesto Chicken Dinner', 'Smoky Chicken and Cinnamon Roasted Sweet Potato Meal Prep']
+Leaf
+['Chimichurri Chicken and Rice', 'Garlic Marinated Chicken', 'How to Cook Chicken Breast in a Pan']
+Leaf
+['Coconut Turmeric Chicken Soup']
+Leaf
+['Easy Cilantro Lime Chicken', 'Sheet Pan Cranberry Chicken Dinner', 'Sweet and Spicy Glazed Chicken Thighs', 'Roasted Chicken', 'Baked Chicken Drumsticks']
+Internal Node
+Recipes under $10
+Leaf
+['Chorizo Stuffed Bell Peppers', 'Apple Spice Pork Chops', 'Roasted Eggplant with Meat Sauce', 'Mediterranean Hummus Bowls', 'Turkey Chili Smothered Sweet Potatoes', 'Brown Sugar Roasted Pork Loin', 'Easiest Burrito Bowl Meal Prep', 'Beef and Cauliflower Taco Skillet', 'Easy Pumpkin Chili']
+Leaf
+['Rice Cooker Chili', 'Bún Chả (Vietnamese Meatballs)', 'Baked Chimichurri Fish Bowls', 'Blackened Salmon with Zucchini']
+Leaf
+['Beef Taco Skillet', 'Baked Chicken Wings', 'Turkey Taco Salad', 'Jerk Chicken with Pineapple Black Bean Salsa', 'Maple Sage Breakfast Sausage', 'Greek Turkey and Rice Skillet']
+Internal Node
+Quick Recipes
+Internal Node
+Under $1 per serving
+Leaf
+['Cheese Grits', 'Sweet and Spicy Tuna Salad', 'Homemade Italian Dressing', 'Creamy Avocado Dressing', 'Mashed Potatoes', 'Gingerbread Coffee Creamer', 'Homemade Kale Pesto', 'Easy Cheesy Broccoli Rice', 'Succotash']
+Leaf
+['Easy Oven Baked Fish with Tomatoes', 'Mediterranean Tuna Salad', 'Wilted Spinach Salad', 'Lemon Dill Salmon and Kale Salad', 'Garlic Butter Baked Cod', 'Make Ahead Kale White Bean and Pesto Salad', 'All-Purpose Garlic Herb Seasoning']
+Internal Node
+Side Dish Recipes
+Leaf
+['Colcannon', 'Double Spinach Artichoke Dip', 'Roasted Carrots', 'How to Steam Fresh Green Beans', 'Marinated Cauliflower Salad', 'Slow Cooker Mashed Potatoes', 'Garlic Parmesan Oven Fries', 'Easy Taco Rice']
+Leaf
+['Slow Cooker Hot Buttered Apples', 'Creamy Sweet Potato Soup', 'Carrot Soup', 'Creamy Chicken and Rice Skillet']
+Internal Node
+Vegetarian Recipes
+Internal Node
+Under $1 per serving
+Internal Node
+Recipes under $3
+Internal Node
+All-Purpose Flour
+Leaf
+['“Everything But the Bagel” Sandwich Rounds', 'Homemade Biscuits', 'Easy Soda Bread', 'Funfetti Mug Cake', 'Cinnamon Nut Swirl Mug Cake', 'Tomato Basil No Knead Bread', 'Seeded No-Knead Bread', 'Streuseled Sweet Potatoes', 'Ranch Drop Biscuits']
+Leaf
+['Super Crunchy Oil Free Granola', 'Easy Homemade Falafel', 'Cinnamon Pita Crisps', 'Rice Cooker Mac and Cheese', 'Cinnamon Pecan Cauli Oats', 'Garlic Herb Whipped Cottage Cheese Dip']
+Leaf
+['Summer Sweet Corn Salad', 'Cheddar Drop Biscuits', 'Pumpkin Pie Overnight Oats', 'Garlicky Kale and Ricotta Pizza', 'Bruschetta', 'Broccoli Cheddar Pizza', 'Easy Lemon Cream Pie', 'Roasted Broccoli Pasta with Lemon and Feta', 'Roasted Vegetable Couscous', 'Golden Milk Overnight Oats']
+Internal Node
+Recipes under $10
+Internal Node
+Olive Oil
+Leaf
+['Fresh Tomato Basil Pasta with Ricotta', 'Italian Orzo Salad', 'Roasted Brussels Sprouts Salad', 'Summer Vegetable Pasta Salad', 'The Best Green Bean Casserole (no canned soup)', 'Vegetable Barley Soup', 'Eggplant Mozzarella Sandwiches', 'Mushroom and Spinach Pasta with Ricotta']
+Leaf
+['Strawberry Shortcake with Homemade Biscuits', 'Loaded Mashed Potato Bowls', 'Broccoli Cheddar Stuffed Baked Potatoes']
+Leaf
+['Lemon Berry Yogurt Breakfast Bowls', 'Double Chocolate Overnight Oats', 'Broccoli Pasta Salad with Tomato Vinaigrette', 'Asparagus Pasta with Lemon and Garlic', 'Extra Cheesy Homemade Mac and Cheese', 'Panzanella', 'Green Chile Mac and Cheese']
+Internal Node
+Main Dish Recipes
+Internal Node
+Meat Recipes
+Internal Node
+Recipes under $10
+Internal Node
+Onion
+Leaf
+['One Pot Cheeseburger Pasta', 'Bacon and Spinach Pasta with Parmesan', 'Sausage and Tortellini Soup', 'Turkey Taco Skillet', 'One Pot Creamy Cajun Chicken Pasta', 'Roasted Bratwurst with Peppers and Onions']
+Leaf
+['Creamy Tuna Pasta', 'Cheesy Cottage Pie', 'Baked Spicy Chicken Sandwiches', 'BBQ Chicken Burrito Bowls', 'Enchilada Bubble Up Casserole']
+Leaf
+['Homemade Baked Chicken Nuggets', 'Green Chile Chicken Enchiladas', 'Garlic Parmesan Kale Pasta Meal Prep', 'One Pot Creamy Pesto Chicken Pasta', 'Greek Chicken Wraps', 'King Ranch Chicken Casserole', 'Creamy Spinach Artichoke Chicken', 'Classic Baked Ziti']
+Leaf
+['Chicken Alfredo', 'One Pot Lemon Garlic Shrimp and Rice', 'Chipotle Pumpkin Pasta', 'Garden Vegetable Lasagna Soup', 'Pollo Guisado (Puerto Rican Chicken Stew)', 'Pepperoni Pasta Salad', 'White Pizza with Parsley Pesto Drizzle', 'Spinach Alfredo Pasta', 'Puerto Rican Rice And Beans']
+Internal Node
+Under $1 per serving
+Internal Node
+Quick Recipes
+Leaf
+['Garlic Toast with Balsamic Tomatoes and White Beans', 'Pizza Roll Ups', 'Lemon Parsley Pasta', 'Thin and Crispy Pizza Crust', 'Green Chile Enchilada Sauce', 'Peanut Butter Fluff Cups']
+Leaf
+['Cinnamon Pecan Sandies', 'Homemade Cheesy Garlic Bread', 'Ham and Cheese Biscuits', 'Potatoes Au Gratin', 'Pizza Pasta Salad', 'Pesto Pizza Rolls']
+Leaf
+['“Quick Fix” Broccoli Pesto Pizza', 'Creamy Chicken and Spinach Quesadillas', 'The Best Broccoli Cheddar Soup', 'Roasted Corn Quesadillas', 'No Bake Strawberry Cheesecake for Two', 'SNAP Challenge: One Pot Chili Pasta', 'Air Fryer Grilled Cheese']
+Internal Node
+Recipes under $10
+Internal Node
+Main Dish Recipes
+Internal Node
+Meat Recipes
+Internal Node
+Under $3 per serving
+Internal Node
+Dairy Free Recipes
+Internal Node
+Soy Sauce
+Leaf
+['Sweet and Sour Pork Chops with Vegetables', 'Jessica Gavin’s Honey Hoisin Garlic Chicken', 'Rice Cooker Teriyaki Shrimp and Rice', 'One Pot Teriyaki Chicken and Rice', 'Beef Stir Fry Noodles', 'Slow Cooker Pineapple Teriyaki Chicken', 'Slow Cooker Hamburger Stew']
+Leaf
+['Sausage and Vegetable Skillet', 'Smoky Roasted Sausage and Vegetables', 'Beef and Cabbage Soup', 'Cajun Sausage and Vegetables', 'Sheet Pan Kielbasa Potatoes and Green Beans', 'Dollar Store Dinners – Sausage and Rice', 'Cajun Sausage and Rice Skillet']
+Internal Node
+Quick Recipes
+Leaf
+['Garlic Noodles with Beef and Broccoli', 'Creamy Chicken Fajita Pasta', 'BBQ Beef and Beans', 'Garlic Herb Baked Chicken Breast', 'White Cheddar Mac and Cheese with Chicken and Broccoli', 'BBQ Beef and Cabbage', 'Easy Lemon Pepper Chicken']
+Leaf
+['Pineapple Pork Hawaiian Burgers', 'BBQ Cheddar Baked Chicken', 'Creamy Mushroom Chicken with Crispy Onions', 'Balsamic Chicken and Mushrooms']
+Internal Node
+Under $1.50 per serving
+Internal Node
+Dairy Free Recipes
+Leaf
+['Easy Teriyaki Chicken', 'Slow Cooker Cabbage and Sausage', 'Instant Pot Pinto Beans With Chorizo', 'Honey Chipotle Chicken', 'One Pot Chicken and Rice', 'Bratwurst and Sauerkraut', 'Quickie Red Beans and Rice']
+Leaf
+['Garlic Butter Baked Chicken Thighs', 'Homemade Chicken Piccata', 'Glazed Ham Steaks', 'Skillet Pineapple BBQ Chicken']
+Leaf
+['Italian Sausage Stuffed Zucchini']
+Internal Node
+Vegetarian Recipes
+Internal Node
+Garlic
+Internal Node
+Brown Sugar
+Leaf
+['Cold Peanut Noodle Salad', 'Vegan Winter Lentil Stew', 'Easy Vegetable Stir Fry', 'Sesame Tempeh Bowls', 'Peanut Tofu', 'Balsamic Roasted Mushrooms with Herby Kale Mashed Potatoes', 'Soy Marinated Tofu Bowls with Spicy Peanut Sauce', 'Spicy Coconut Vegetable Stir Fry']
+Leaf
+['Make Ahead Bean and Cheese Burritos', 'Sun Dried Tomato, Kale, and White Bean Skillet', 'Skillet Pasta with Sun Dried Tomatoes Walnuts and Feta', 'Loaded Sweet Potatoes with Chipotle Lime Crema']
+Leaf
+['Hoisin Tofu Lettuce Cups', 'Tempeh Burrito Bowls', '15-Minute Vegetable Lo Mein', 'Gochujang Mushroom Bowls', 'Pan Fried Sesame Tofu with Broccoli', 'Wild Rice Stuffed Acorn Squash', 'Cheese Enchiladas', 'Sweet and Spicy Tempeh Bowls']
+Leaf
+['Summer Vegetables in Red Sauce', 'Spicy Orecchiette with Chicken Sausage and Kale']
+Internal Node
+Under $3 per serving
+Leaf
+['Turkey and Wild Rice Soup', 'Thai Curry Vegetable Soup', 'Creamy Vegetable Wild Rice Soup (Vegan)', 'Balsamic Roasted Vegetables', 'Chunky Ham and Bean Soup', 'Dollar Store Dinners – Bean Quesadillas', '“Sweep the Kitchen” Pasta Salad', 'Dollar Store Dinners – Pea Soup']
+Leaf
+['Monkey Bread', 'Spicy Chorizo Cheese Dip', 'Baked Beans', 'Wild Rice and Vegetable Casserole', 'Gingersnap Granola', 'Parsley Pesto Pasta with Peas', 'Vegetable Tofu Scramble', 'French Onion Soup']
+Internal Node
+Under $1 per serving
+Internal Node
+Vegetarian Recipes
+Internal Node
+Quick Recipes
+Internal Node
+Globally Inspired Recipes
+Leaf
+['Easy Homemade Sweet and Sour Sauce', 'Quick Vegetarian Tofu Stir Fry', 'Easy Sweet Chili Sauce', 'Creamy White Bean and Spinach Quesadillas', 'Spicy Peanut Butter Ramen', 'Sesame Roasted Green Beans', 'Sesame Slaw', 'Soy Glazed Eggplant', 'Simple Sesame Rice']
+Leaf
+['Mushroom Rice', 'Curried Tofu Salad', 'Vegetables and Gravy', 'Lemon Garlic Roasted Asparagus', 'Sriracha Nooch Popcorn']
+Leaf
+['Honey Sriracha Tofu', 'Spiced Lentils with Carrots', 'Wild Rice Pilaf', 'Tomato Lentil Soup', 'Maple Miso Roasted Carrots', 'Baked Barley with Mushrooms', 'Apple Pie Overnight Oats']
+Internal Node
+Quick Recipes
+Leaf
+['Pesto Hummus', 'Cranberry Orange Cream Scones', 'Sriracha Pimento Cheese Spread', 'Easy Buffalo Sauce', 'Gochujang Tuna Salad', 'Creamy Pesto Mac with Spinach', 'Homemade Hot Chocolate']
+Leaf
+['Easy Apple Crisp', 'Homemade Rice Krispie Treats', 'No Bake Pretzel Peanut Butter Bars', 'Roasted Garlic', 'Jerk Seasoned Collard Greens']
+Internal Node
+Meat Recipes
+Internal Node
+Main Dish Recipes
+Leaf
+['Chicken and Dumplings with Vegetables', 'Arroz Con Pollo (Puerto Rican Chicken and Rice)', 'Slow Cooker Sesame Beef', 'Easy American Goulash', 'Pork and Peanut Dragon Noodles', 'Creamy Pesto Chicken', 'Cider Roasted Turkey Breast', 'Quick BBQ Chicken']
+Leaf
+['Crispy Baked Honey Sriracha Chicken Drumsticks', 'Easy Vegetable Beef Soup', 'Nam Sod (Thai Pork Salad)', 'Broccoli Cheddar Chicken Salad', 'Slow Cooker Buffalo Chicken']
+Internal Node
+Vegetarian Recipes
+Leaf
+['Baked Sweet Potato Fries with Peanut Lime Dressing', 'How to Make the Best Veggie Sandwich', 'Tomato and Roasted Red Pepper Soup', 'Peanut Tofu Noodle Bowls', 'Gochujang Ramen with Tofu', 'Vegan Creamy Mushroom Ramen', 'Balsamic Roasted Mushrooms', 'Roasted Pumpkin Seeds']
+Leaf
+['Kale Salad with Toasted Pita and Parmesan', 'Antipasto Salad', 'Pizza Melts', 'Cottage Cheese Crab Bowl']
+Internal Node
+Recipes under $10
+Internal Node
+Main Dish Recipes
+Internal Node
+Meat Recipes
+Internal Node
+Under $3 per serving
+Internal Node
+Garlic Powder
+Internal Node
+Breadcrumbs
+Leaf
+['Sheet Pan BBQ Meatballs', 'BBQ Meatballs with Cheese Grits', 'Giant Slow Cooker Meatballs', 'Sheet Pan BBQ Meatloaf Dinner', 'Cheddar Cheeseburger Meatloaf', 'Spinach and Feta Turkey Meatballs', 'Chicken Parmesan Meatballs']
+Leaf
+['Creamy Salsa Chicken Skillet', 'Sheet Pan Sweet and Sour Chicken', 'Easy BBQ Chicken Sandwiches', '20 Minute Honey Mustard Chicken']
+Internal Node
+Garlic
+Leaf
+['Chicken and Broccoli Pasta with Lemon Cream Sauce', 'Beef and Cabbage Stir Fry', 'Spaghetti with Hidden Vegetable Pasta Sauce', 'Lemon Garlic Roasted Chicken', 'Crispy Baked Beef and Black Bean Tacos', 'Crunchy Chicken Ramen Stir Fry']
+Leaf
+['Hoisin Stir Fry Bowls with Spicy Peanut Sauce', 'Italian Sausage and White Bean Skillet', 'Smoked Sausage with Peppers and Farro', 'Chorizo Breakfast Hash', 'Salisbury Steak with Mushroom Gravy']
+Internal Node
+Under $1.50 per serving
+Internal Node
+Garlic
+Leaf
+['Beef Burrito Casserole', 'Herb Butter Chicken Thighs', 'Creamy Chicken Gnocchi Soup with Kale', 'Instant Pot Congee (Rice Porridge)', 'Pressure Cooker Red Beans', 'Southwest Beef and Cabbage Stir Fry', 'Creamy Tomato Pasta with Sausage', 'Sheet Pan Roasted Kielbasa and Cabbage Dinner', 'One Pot Sausage and Sun Dried Tomato Pasta']
+Leaf
+['Cheesy Chicken Vegetable and Rice Casserole', 'Chicken Pot Pie', 'Ultimate BBQ Chicken Quesadillas', 'Swedish Meatballs', 'Cajun Cabbage and Noodles', 'Kielbasa and Cabbage Skillet']
+Leaf
+['Classic Homemade Meatloaf', 'Slow Cooker Carnitas', 'Sticky Ginger Soy Glazed Chicken']
+Internal Node
+Vegetarian Recipes
+Internal Node
+Garlic
+Internal Node
+Bean & Grain Recipes
+Leaf
+['Garden Vegetable Quinoa Soup', 'Slow Cooker Coconut Curry Lentils', 'Vegetarian Shepherd’s Pie', 'White Beans with Mushrooms and Marinara', 'Cheesy Vegetarian Chili Mac', 'Coconut Jerk Peas with Pineapple Salsa', 'Vegetarian 15 Bean Soup', 'Tomato Herb Rice with White Beans and Spinach']
+Leaf
+['Simple Mushroom Broccoli Stir Fry Noodles', 'Singapore Noodles with Crispy Tofu', 'Mango Coconut Tofu Bowls']
+Leaf
+['Southwest Spaghetti Squash Bowls', 'How to Make A Frittata', 'Smoky White Bean Shakshuka', 'Buffalo Tempeh Sandwiches', 'Ultimate Portobello Mushroom Pizza', 'Bean and Cheese Enchiladas']
+Internal Node
+Pasta Recipes
+Leaf
+['Blackened Shrimp Pasta', 'Spicy Seafood Pasta with Tomato Butter Sauce', 'One Pot Bacon Broccoli Mac and Cheese', 'Parmesan & Pepper Kale Pasta', '20 Minute Creamy Spinach Artichoke Pasta', 'Tuna Noodle Casserole']
+Leaf
+['Honey Mustard Chicken Wings', 'Kale Swiss and Mushroom Strata', 'Cajun Salmon Burgers', 'Zucchini Slice', 'Ratatouille Frittata']
+Internal Node
+Vegetarian Recipes
+Internal Node
+Vegetable Recipes
+Internal Node
+Garlic
+Leaf
+['Cabbage Soup', 'Hot Corn Dip', 'Sweet Potato Grain Bowls with Green Tahini Sauce', 'Spinach and Orzo Salad with Balsamic Vinaigrette', 'Vegetarian Stuffing', 'Broiled Balsamic Vegetables with Lemon Parsley Rice', 'Roasted Cauliflower Salad with Lemon Tahini Dressing', 'Zucchini and Orzo Salad with Chimichurri', 'Mediterranean Farro Salad with Spiced Chickpeas', 'Grilled Vegetable Pasta Salad']
+Leaf
+['Thai Coconut Curry Carrot Soup', 'Maple Brown Butter Mashed Sweet Potatoes', 'Peanut Lime Cauliflower Salad', 'Harissa Roasted Vegetables', 'Broccoli Salad with Honey Yogurt Dressing', 'Hot and Sour Soup with Tofu', 'Cowboy Caviar']
+Internal Node
+Gluten free Recipes
+Leaf
+['Ultimate Southwest Scrambled Eggs', 'Marinated Lentil Salad', 'Spiced Chickpea Tostadas (or tacos)', 'Spinach White Bean Enchiladas with Pepper Jack Sauce', 'Spicy Baked Black Bean Nachos', 'Coconut Crusted Tofu with Sweet Chili Dipping Sauce', 'Creamy Roasted Red Pepper Sauce', 'Menemen (Turkish Scrambled Eggs with Tomatoes)', 'No-Churn Mint Chocolate Chip Ice Cream']
+Leaf
+['Veggie Packed Freezer Breakfast Sandwiches', 'Roasted Apple Cranberry Relish', 'Apple Pie', 'Cranberry Cream Cheese Dip', 'Mini Dark Chocolate Pecan Pies', 'Pumpkin Pie', 'Peach Galette', 'Hot Honey Cornbread', 'Sweet Potato Casserole Baked Oatmeal']
+Internal Node
+Garlic
+Internal Node
+Globally Inspired Recipes
+Leaf
+['Slow Cooker 5 Spice Pulled Pork', 'Shrimp Alfredo Pasta', 'Greek Chicken Pasta Salad', 'Seafood Rice Skillet', 'Easy Homemade Orange Chicken', 'Tajín Shrimp Tacos', 'Pork Gyoza', 'Roasted Sweet Potato Rainbow Salad with Lime Crema', 'Cheesy Rigatoni Skillet with Mushrooms and Spinach']
+Leaf
+['Blackened Shrimp Tacos', 'Baked Chicken with Artichokes and Tomatoes', 'Balsamic Chicken Skillet', 'Tomato Mozzarella Pasta Salad with Balsamic Vinaigrette', 'Herb Roasted Chicken Breasts', 'BIG Kale Pasta Salad', 'Kale Pesto Pasta', 'Slow Cooker Chicken Noodle Soup']
+Internal Node
+Under $3 per serving
+Leaf
+['Grape Feta and Bacon Salad with Creamy Dijon Dressing', 'Shrimp Fried Rice with Pineapple and Toasted Coconut', 'Sausage Stuffed Spaghetti Squash', 'Chicken and Mandarin Salad with Simple Sesame Dressing', 'Pesto Chicken and Broccoli Salad', 'Kale and Salmon Caesar Salad', 'Brown Sugar Bacon Breakfast Sandwiches with Chipotle Mayo']
+Leaf
+['Bacon Broccoli Cheddar Crustless Quiche', 'Sweet Potato Casserole', 'Pumpkin Bread', 'Carrot Cake Baked Oatmeal', 'Classic Tuna Salad', 'Sausage and Egg Breakfast Quesadillas']
+Internal Node
+Under $1 per serving
+Internal Node
+Vegetarian Recipes
+Internal Node
+Recipes under $5
+Internal Node
+All-Purpose Flour
+Internal Node
+Egg
+Internal Node
+Sugar
+Leaf
+['Almond Apricot Biscotti', 'Super Fudgy Homemade Brownies', 'Sweet Potato Cornbread', 'Chocolate Chip Cookies', 'Jalapeño Cheddar Cornbread', 'Homemade Blueberry Muffins', 'Yogurt Banana Bread', 'Blueberry Buttermilk Coffee Cake']
+Leaf
+['Mini Broccoli Cheddar Quiches', 'Peanut Butter and Jelly Bars', 'Savory Cabbage Pancakes (Okonomiyaki)']
+Leaf
+['Blueberry Lemon Curd Shortcakes', 'Mushroom Herb Gravy', 'Vegetable Pot Pie Skillet with Cheddar Biscuit Topping', '5 Ingredient Freezer Biscuits']
+Internal Node
+Soy Free Recipes
+Leaf
+['Lemon Blueberry Cream Cheese Galette', 'Freezer Ready Mini Pizzas', 'Peanut Butter Brownie Baked Oatmeal', 'Maple Brown Butter Pumpkin Pie', 'Roasted Potato Wedges with Shawarma Sauce', 'Honey Mustard Broccoli Salad', 'Quick Veggie Pasta']
+Leaf
+['Cranberry and Cabbage Salad', 'Parsley Scallion Hummus Pasta', 'Sriracha Egg Salad', 'Banana Coconut Baked Oatmeal', 'Warm Corn and Avocado Salad', 'Pressure Cooker Split Pea Soup', 'Spinach and Chickpea Rice Pilaf', 'Kale Salad with Cajun Spiced Chickpeas and Buttermilk Dressing']
+Internal Node
+Recipes under $3
+Internal Node
+Quick Recipes
+Internal Node
+Soy Free Recipes
+Internal Node
+Gluten free Recipes
+Leaf
+['Luscious Homemade Lemon Curd', 'Chocolate Coffee Breakfast Smoothie', 'Flourless Peanut Butter Cookies', 'Easy Hollandaise Sauce', 'Lime Crema', 'Homemade Balsamic Glaze', 'Vanilla Pudding', 'Easy Creamy Coleslaw', 'Honey Mustard Sauce']
+Leaf
+['Homemade Ranch Dressing', 'Southwest Tortilla Baked Eggs', 'Ranch Broccoli Pasta']
+Leaf
+['Small Batch Deviled Eggs', 'Sesame Kale', '5 Minute Nacho Cheese Sauce', '5-Minute Microwave French Toast Mug', 'Lemon Poppy Seed Two-Bite Scones']
+Leaf
+['How to Make Crispy Hash Browns', 'Blackened Cabbage with Chipotle Mayo', 'Banana Flax Muffins', 'Cumin Rice', 'Ricotta Pancakes', 'Anne Byrn’s 1917 Applesauce Cake', 'Buttermilk Pull-Apart Rolls from Bread Toast Crumbs']
+Leaf
+[]
+Internal Node
+Egg
+Internal Node
+Breakfast Recipes
+Leaf
+['Fluffy Homemade Pancakes', 'Make Ahead Microwave Breakfast Scrambles', 'Tortilla Baked Eggs', 'Orange Cranberry Muffins', 'Chocolate Banana Muffins', 'Cottage Cheese Breakfast Bowls 6 Ways', 'Almond Dutch Baby with Ricotta and Jam', '5 Minute Savory Microwave Breakfast Mug', 'Hummus Breakfast Bowls']
+Leaf
+['Hatch Chile Sweet Potato Cornbread', 'Lemon Bars', 'Mini Pumpkin Pies', 'Easy Egg Salad', 'Turkey and Stuffing Meatballs']
+Internal Node
+Recipes under $3
+Leaf
+['No-Knead Bread', 'Easy Homemade Balsamic Vinaigrette', 'Homemade BBQ Sauce (no ketchup)', 'Easy Homemade Teriyaki Sauce', 'Tomato Herb Pull Apart Bread', 'Sweet Molasses Dinner Rolls', 'Country Sausage Gravy', 'Comeback Sauce']
+Leaf
+['One Pot Creamy Mushroom Pasta', 'Easy Baked Brie with Apples', 'Bacon and Caramelized Pineapple Pizza', 'Slow Cooker Spiced Cranberry Apple Cider']
+Internal Node
+Recipes under $5
+Internal Node
+Under $1.50 per serving
+Internal Node
+Vegetarian Recipes
+Internal Node
+Gluten free Recipes
+Leaf
+['Smoky Black Bean Soup', 'Cheddar Grits Breakfast Bowls', 'Green Chile Migas', 'Golden Coconut Lentil Soup', 'Mango Coconut Chia Pudding', 'Warm Brussels Sprouts and Pear Salad']
+Leaf
+['Pasta with 5 Ingredient Butter Tomato Sauce', 'BBQ Tofu Sliders', 'Spicy Pineapple Cucumber Salad', 'Creamy Mushroom Herb Pasta', 'Lemon Berry Cobbler', 'Kimchi Fried Rice', 'Banana Pudding']
+Leaf
+['Vegetable Fritters with Garlic Herb Sauce', 'Easy Spaghetti Carbonara', 'Sesame Noodles with Wilted Greens', 'Golden Chai', 'The Best Weeknight Pasta Sauce', 'Creamed Spinach Baked Eggs', 'Pasta with Bacon and Peas']
+Leaf
+['Quick Garlic Butter Shrimp', 'Lime Shrimp Dragon Noodles', 'Sriracha Chickpea Salad Wraps', 'Oven Roasted Chicken Legs', 'Roasted Broccoli Salad with Almonds and Simple Sesame Dressing', 'Almost Eggs Benedict', 'Ravioli with Sage Brown Butter Sauce', 'Spicy Roasted Cauliflower with Cheese Sauce', 'Dollar Store Dinners – Spam Stir Fry Noodles']
+Internal Node
+Main Dish Recipes
+Internal Node
+Meat Recipes
+Internal Node
+Recipes under $15
+Leaf
+['Instant Pot Beef Stew', 'Bacon Ranch Turkey Burgers', 'Cheeseburger Salad with Animal Sauce Dressing', 'Bibimbap – The Ultimate Bowl Meal', 'Beef and Mushroom Country Casserole', 'Skillet Chicken with Orzo and Olives', 'Beef Kofta Meatballs with Roasted Vegetables', 'Slow Cooker Salsa Verde Chicken Bowls', 'Sunday Slow Cooker Beef Ragù']
+Leaf
+['Easy Homemade Meatballs', 'Slow Cooker Jambalaya', 'Sausage Breakfast Casserole', 'Slow Cooker Meatball Subs', 'Sheet Pan Greek Chicken and Vegetables']
+Leaf
+['Will It Skillet? Mac and Cheese', 'Roasted Vegetable Baked Penne', 'Chili Garlic Tofu Bowls', 'Sheet Pan Portobello Fajitas', 'Vegetarian French Dip Sandwiches', 'Cobb Salad Meal Prep']
+Internal Node
+Recipes under $3
+Leaf
+['Chimichurri Sauce: Good on Anything and Everything', 'Scrambled Eggs with Spinach and Feta', 'Vegetable Breakfast Scrambles', 'One Pot Veggie Rice Bowl', 'Make Ahead Seeded Oats', 'Coconut Curry Ramen', 'Homemade Pineapple Orange Julius', 'Easy 3-Ingredient Pie Crust']
+Internal Node
+How-To
+Leaf
+['How to Cook Rice', '6 Ways to Upgrade Instant Ramen', 'How to Fry an Egg', 'Homemade Pumpkin Pie Spice']
+Leaf
+['Braised Thai Coconut Curry Chicken Thighs', 'Apple Cider Mimosas', 'Creamy Lemon Dill Greek Pasta Salad', 'Chicken and Cranberry Salad with Lemon Poppy Seed Dressing', 'Purple Power Bowls', 'Easy Chicken and Vegetable Meal Prep', 'Quickie Faux Phở']
+Internal Node
+Under $1 per serving
+Internal Node
+Vegetarian Recipes
+Internal Node
+Recipes under $3
+Internal Node
+Quick Recipes
+Internal Node
+Gluten free Recipes
+Internal Node
+Soy Free Recipes
+Internal Node
+Egg Free Recipes
+Internal Node
+Dairy Free Recipes
+Internal Node
+Vegan Recipes
+Leaf
+['Cucumber Mango Salad', 'Sriracha Hummus', 'Easy Rosemary Garlic White Bean Soup', 'Marinated White Beans', 'Easy Pineapple Salsa', 'How To Make Sofrito', 'Lemony White Bean Salad', 'Classic Homemade Cranberry Sauce', 'Air Fryer Chickpeas', 'Sweet Corn Salsa']
+Leaf
+['Homemade Baked Tortilla Chips']
+Leaf
+['Sautéed Corn and Tomatoes', 'Homemade Ranch Seasoning Mix', 'How to Make Homemade Whipped Cream', 'Creamy Cucumber Salad', 'sweet potato grits', 'Pumpkin Smoothie', 'Dilly Vegetable Dip', 'Cucumber Raita']
+Leaf
+['Cumin Lime Coleslaw', 'Spicy Hot Cocoa', 'Thick & Rich Pizza Sauce Recipe', 'Peanut Butter Banana Smoothie']
+Internal Node
+Globally Inspired Recipes
+Leaf
+['Chai Concentrate', 'The Best Homemade Hummus (Plus Four flavors)', 'Tzatziki (Greek Yogurt Sauce)', 'Spicy Peanut Sauce', 'Quick Seasoned Black Beans', 'Chipotle Mashed Sweet Potatoes']
+Leaf
+['Chipotle Peach Salsa', 'Spicy Pickled Carrots', 'Leftover Rice Pancakes', 'Chili Lime Cantaloupe', 'Hummus Breakfast Mug', 'Lemon Pepper Zucchini']
+Internal Node
+Egg
+Internal Node
+All-Purpose Flour
+Leaf
+['Zucchini Fritters', 'Easy Homemade Cornbread', 'Cinnamon Swirl Oven Pancake', 'The Best Chocolate Mug Cake', 'Chai Spiced Scones', 'Easy Ricotta Gnocchi', 'Lemon Blueberry Scones']
+Leaf
+['Eggs Florentine Breakfast Pizza', 'Chili Cheese Cornbread', 'Lemon Herb Egg Salad', 'Chili Garlic Breakfast Quesadilla']
+Internal Node
+Egg Free Recipes
+Leaf
+['Blueberry Mug Muffin', 'Peanut Butter Banana Quesadillas', 'Tomato Herb Soup', 'Easy Enchilada Sauce', 'Peanut Lime Dressing', 'Sesame Ginger Dressing', 'The Quick Fix Salad Bar Pizza', 'Autumn Fruit and Nut Oatmeal', 'Air Fryer Cinnamon Toast', 'Toasted Coconut Oat Bran']
+Leaf
+['Polvorones', 'Tartar-Like Sauce', 'Pumpkin Cream Cheese Spread', 'Muesli', 'Miracle Mac and Cheese', 'The Best Homemade Garlic Bread', 'Caramelized Banana and Peanut Butter Quesadilla']
+Internal Node
+All-Purpose Flour
+Internal Node
+Bread Recipes
+Internal Node
+Yeast
+Internal Node
+Yeast Bread Recipes
+Internal Node
+Olive Oil
+Leaf
+['Homemade Naan', 'Homemade Pizza Dough', 'No-Knead Ciabatta', 'No-Knead Focaccia Rolls', 'Honey Wheat Bread', 'Honey Sunflower Bread', 'Honey Wheat Pizza Dough', 'No-Knead Homemade Focaccia', 'Homemade Pita Bread']
+Leaf
+['Cinnamon Raisin Bread', 'No Knead English Muffin Bread', 'Homemade English Muffins', 'oatmeal molasses bread', 'Cinnamon Raisin Bagels']
+Leaf
+[]
+Leaf
+['Brown Butter Soda Bread', 'Rosemary Pepper Drop Biscuits', 'Pumpkin Molasses Bread', 'Flour Tortillas v.2.0 (low fat)']
+Internal Node
+Dessert Recipes
+Leaf
+['italian holiday cookies', 'lemon spice cake', 'Chocolate Depression Cake (egg-free, dairy-free)', 'Lemon Coconut Bars', 'Snickerdoodles for Two', 'Cinnamon Spice Biscotti', 'Lemon Blueberry Cornbread Skillet', 'Raspberry Oatmeal Bars', 'Apple Pie Scones', 'lemon pudding cakes for two']
+Leaf
+['Easy Homemade Crepes', 'Deruny (Draniki) – Ukrainian Potato Pancakes', 'Creamed Spinach']
+Internal Node
+Gluten free Recipes
+Internal Node
+Vegan Recipes
+Leaf
+['Nature’s Candy', 'Olive Oil Mashed Potatoes', 'Smoky Roasted Sweet Potatoes', 'Smoky Garlic Oven Fries', 'Seasoned Rice', 'Chili Roasted Potatoes', 'Curry Roasted Carrots', 'Oven Roasted Frozen Broccoli', 'Coconut Rice']
+Leaf
+['(Not) Refried Beans', 'Oven Roasted Corn with Honey Chili Butter', 'Sriracha Caramel Corn', 'Creamy Rice Pudding', 'Sriracha Deviled Eggs', 'Honey Balsamic Glazed Carrots', '(not) Sun Dried Tomato Sauce']
+Internal Node
+Breakfast Recipes
+Leaf
+['Heat and Eat Oatmeal', 'smoothie packs & my favorite smoothie', 'Gingerbread Steel Cut Oats', 'choco-coconut granola', 'gingerbread baked oatmeal', 'Spiced Coconut Steel-Cut Oats', 'Egg Florentine Quesadillas']
+Leaf
+['Black Bean Burgers', 'olive herb bread', 'Cranberry Walnut Bread', 'Homemade Freezer Garlic Bread', 'Nutty Caramel Corn', 'How to Make Homemade Croutons']
+Internal Node
+Recipes under $5
+Internal Node
+Gluten free Recipes
+Internal Node
+Soy Free Recipes
+Internal Node
+Egg Free Recipes
+Internal Node
+Dairy Free Recipes
+Internal Node
+Vegan Recipes
+Internal Node
+Vegetable Recipes
+Leaf
+['Curry Roasted Cauliflower', 'broccoli sambal', 'Vegan Red Lentil Stew', 'Simple Tomato Cucumber Salad', 'Easy Slow Cooker White Bean Soup', 'Vegetarian Mustard Greens', 'Skillet Potatoes and Green Beans', 'Baba Ganoush', 'Summer Gazpacho']
+Leaf
+['Curried Lentils', 'Strawberry Syrup', 'Slow Cooker Black Bean Soup', 'Vegan Split Pea Soup']
+Leaf
+[]
+Leaf
+['Cashew Rice Pilaf', 'Roasted Carrot and Feta Salad', 'Smoky Parmesan Roasted Cauliflower', 'Curried Cabbage', 'Spinach and Feta Mashed Potatoes']
+Leaf
+['Zucchini and Corn Frittata', 'SNAP Challenge: Spinach Rice Breakfast Bowls', 'Oatmeal Cookie Baked Oatmeal', 'Apple Cabbage Slaw', 'Loaded Guacamole']
+Internal Node
+Vegan Recipes
+Leaf
+['Homemade Marinara', 'Red Wine Cranberry Sauce', 'Coconut Lentils', 'Minty Pea Salad', 'Quick Curried Chickpeas', 'Cumin Lime Chickpeas', 'Wilted Kale and Lentil Salad', 'Roasted Poblano Hummus', 'Avocado and Tomato Salad', 'Mujaddara']
+Leaf
+['Tropical Yogurt Overnight Oat Parfaits', 'Dal Nirvana', 'Baked Eggs with Spinach and Tomatoes']
+Internal Node
+Egg
+Internal Node
+Breakfast Recipes
+Internal Node
+Sweet Breakfast Recipes
+Internal Node
+Vanilla
+Leaf
+['apple flax muffins', 'morning glory muffins', 'Cranberry Almond Biscotti', 'Apple Cherry Baked Oatmeal', 'Soft Oat and Nut Bars', 'Baked Pumpkin Pie Oatmeal', 'Funky Monkey Baked Oatmeal', 'Blueberry Banana Baked Oatmeal', 'White Chocolate Strawberry Scones', 'Cranberry Apple Baked Oatmeal']
+Leaf
+['Triple Berry Oatmeal Muffins', 'Easy and Quick Homemade Baked Oatmeal']
+Leaf
+['Green Chile Breakfast Quesadillas', 'Asparagus Breakfast Wraps']
+Leaf
+['Cheddar Scallion Scones', 'Vegetable Fried Rice', 'Lemon Ricotta Cookies', 'Corn and Cheddar Pudding']
+Internal Node
+Egg Free Recipes
+Leaf
+['Pumpkin Spice Granola', 'Sweet Potato Biscuits', 'Crunchy Cabbage Salad', 'No Knead Pan Pizza', 'SNAP Challenge: Vegetable Stir Fry with Noodles', 'Carrot & Orzo Salad']
+Leaf
+['Sweet Potato Enchiladas', 'Peach Almond Crisp', 'Mango Pineapple Chutney', 'Lemon Ricotta Pasta', 'Sweet Potato Tortilla Soup', 'Easy Spinach Ricotta Pasta', 'dijon lentil salad', 'Apple Walnut Stuffing']
+Internal Node
+Recipes under $10
+Internal Node
+Garlic
+Internal Node
+Onion
+Internal Node
+Olive Oil
+Leaf
+['Lentil Tacos', 'Fire Roasted Salsa', 'Dolmas (Stuffed Grape Leaves)', 'Chunky Lentil and Vegetable Soup', 'Moroccan Lentil and Vegetable Soup', 'vegetable tamale pie', 'Summer Vegetable Tian', 'Coconut Rice Pilaf', 'Swamp Soup']
+Leaf
+['Slow Cooker Spaghetti Sauce', 'Hearty Black Bean Quesadillas', 'Vegan Peanut Stew']
+Leaf
+['Broccoli Fettuccine Alfredo', 'Sweet Potato Corn Cakes with Garlic Dipping Sauce', 'Quinoa Tabbouleh', 'Quinoa Black Bean Tacos', 'vegetable egg rolls']
+Internal Node
+Cinnamon
+Leaf
+['Jalapeño Cran-Raspberry Sauce', 'Cinnamon Date & Walnut Baked Oatmeal', 'sriracha peach crisp', 'No Sugar Added Banana Nut Granola', 'Homemade Granola', 'Morning Glory Baked Oatmeal', 'Pumpkin Bread Pudding', 'Apple Cinnamon Bread Pudding']
+Leaf
+['Roasted Poblano and Sweet Potato Salad', 'Cajun Potato Salad', 'Oven Roasted Ratatouille', 'Lemony Cucumber Couscous Salad', 'BBQ Black Bean Pizzas', 'Classic Southern Style Potato Salad', 'lemon raspberry baked oatmeal', 'Vinaigrette Slaw with Feta']
+Leaf
+[]
+Internal Node
+Quick Recipes
+Internal Node
+Soy Free Recipes
+Internal Node
+Egg Free Recipes
+Internal Node
+Recipes under $3
+Leaf
+['Honey Vanilla Cottage Cheese Fruit Dip', 'Easy Pumpkin Soup', 'Homemade Cajun Seasoning', 'No-Yeast Pizza Dough', 'Garlic Parmesan Polenta', 'How to Make Stovetop Popcorn', 'Peanut Butter S’mores Pots']
+Leaf
+['Garlic Parmesan Kale Pasta', 'Creamy Tomato and Spinach Pasta', 'Parmesan Portobello Orzo', 'Pesto Mozzarella Roll Ups', 'Blackened Tilapia', 'Bowties and Broccoli']
+Leaf
+['Fried Cabbage and Noodles', 'Chicken Enchilada Pasta', 'Tuna Patties', 'Pesto Chickpea Salad']
+Internal Node
+Recipes under $5
+Leaf
+['Tuna Pasta Salad with Peas', 'Spicy Hawaiian Pizza', 'Tuna and Red Pepper Pasta', 'Macaroni Salad', 'Breakfast Pizza', 'French Bread Pizza', 'Easy Homemade Egg Drop Soup', 'Tangy Tomato Pasta']
+Leaf
+['Homemade Chicken Yakisoba', 'Chicken Salad with Apples', 'Tuna & White Bean Salad', 'Pesto Cheese Toast', 'The Best Homemade Taco Seasoning', 'Grits ‘n Greens', 'Baked Zucchini Fries', 'Pineapple Ginger Lassi', 'Chocolate Lava Cake for Two (or one)', 'Garlic Noodles']
+Internal Node
+Garlic
+Internal Node
+Onion
+Internal Node
+Recipes under $10
+Internal Node
+Main Dish Recipes
+Leaf
+['Slow Cooker 5 Spice Chicken', 'Split Pea, Bacon & Potato Soup', 'Turkey Meatballs', 'Pineapple Pork Kebabs (no grill required)', 'Navy Bean Soup with Sausage and Spinach', 'Creamy Chicken and Rice Soup', 'Spinach Pie', 'Lentil and Sausage Stew']
+Leaf
+['Garden Tomato Soup', 'slow cooker potato soup', 'Slow Cooker Ham and Bean Soup', 'Slow Cooker Chicken and Dumplings']
+Leaf
+['Sopa de Fideo', 'Chunky Split Pea Soup with Ham', 'Beer Braised Collard Greens', 'Black-Eyed Peas', 'Creole White Beans with Chicken']
+Leaf
+['Pork & Ginger Pot Stickers', 'Pesto Potato Salad', 'Collard Greens', 'Yellow Jasmine Rice', 'thai turkey meatloaf', 'Spinach and Mushroom Crustless Quiche']
+Internal Node
+Egg
+Internal Node
+Vanilla
+Leaf
+['Cranberry Almond Cake', 'Oatmeal Pumpkin Cookies', 'Chocolate Cayenne Crinkles', 'apple pie baked oatmeal', 'Banana Bread Baked Oatmeal', 'Smores Macarons', 'Fudge Brownie Pots (for two)', 'All-Edge Spicy Brownies', 'Carrot Cake (for two)']
+Leaf
+['Ham & Potato Frittata', 'Lobster & Cream Cheese Wontons', 'Parmesan Garlic Pretzel Bites', 'Pepperoni Stuffed Chicken', 'Eggplant Parmesan']
+Internal Node
+Gluten free Recipes
+Leaf
+['Crunchy Cranberry Sauce', 'Honey Spice Chicken Thighs', 'Slow Cooker Chili Rubbed Pulled Pork', 'mango coconut jasmine rice', 'German Potato Salad with Bacon', 'Garlic Parmesan Roasted Cauliflower', 'Cilantro Lime Rice', 'Bacon Bean and Potato Soup']
+Leaf
+['Spicy Italian Flat Bread', 'Spicy Chex Mix', 'chocolate cinnamon swirl bread', 'Chocolate Molasses Cookies', 'Parmesan Roasted Potatoes', 'Homemade Broccoli Shells and Cheese', 'raisin spice bread', 'Flour Tortillas']
+Internal Node
+Recipes under $10
+Internal Node
+Main Dish Recipes
+Internal Node
+Garlic
+Internal Node
+Meat Recipes
+Internal Node
+Under $1.50 per serving
+Internal Node
+Chicken Recipes
+Internal Node
+Chicken Thigh Recipes
+Internal Node
+Chicken Thighs
+Internal Node
+Egg Free Recipes
+Leaf
+['Chicken Arrabbiata', 'Yellow Rice Chicken Skillet', 'Maple Dijon Chicken Thighs', 'Honey Sriracha Chicken Thighs', 'Raspberry Chipotle BBQ Chicken', 'Baked Pineapple Teriyaki Chicken Thighs', 'One Pot Lemon Pepper Chicken with Orzo', 'SNAP Challenge: Soy Dijon Chicken Thighs with Sweet Potatoes']
+Leaf
+['Thai Peanut Chicken', 'Easy Slow Cooker Chicken Tikka Masala', 'Greek Marinated Chicken', 'pineapple teriyaki chicken thighs', 'Easy Sesame Chicken']
+Leaf
+['slow cooker chicken']
+Leaf
+['Chicken Noodle Soup', 'chipotle chicken chili or “C3”', 'kung pao chicken', 'SNAP Challenge: Creamy Chicken and Black Bean Enchiladas', '(Not) Butter Chicken', 'Matzo Ball Soup']
+Internal Node
+Pork Recipes
+Internal Node
+Onion
+Leaf
+['One Pot Sausage & Mushroom Pasta', 'Skillet Meatballs and Marinara', 'SNAP Challenge: Penne Pasta with Sausage and Greens', 'Baked Spaghetti', 'Chorizo Sweet Potato Chili', 'Bánh Mì Bowls', 'Slow Cooker Pulled Pork']
+Leaf
+['chili lime pork loin', 'Coffee Rubbed Pork Roast', 'Herb Roasted Pork Tenderloin', 'One Pot Pastalaya', 'Spicy Sausage and Broccoli Pasta']
+Leaf
+['Chili Cheese Beef n’ Mac', 'Unstuffed Bell Peppers', 'Ground Turkey Stir Fry', 'Curried Ground Beef with Peas and Potatoes']
+Internal Node
+Under $3 per serving
+Internal Node
+Globally Inspired Recipes
+Leaf
+['Cilantro Lime Chicken Drumsticks', 'Beef Taco Pasta', 'Teriyaki Meatball Bowls', 'Beef & Pineapple Enchiladas', 'Spicy Shrimp Tomato Pasta', 'The Best Homemade Chili', 'Baked Ginger Salmon', 'Chorizo and Sweet Potato Enchiladas', 'Chicken in Peanut Sauce']
+Leaf
+['One Pot Beef and Mushroom Stroganoff', 'Chicken Adobo', 'White Beans with Tomato and Sausage', 'Soy Dijon Pork Tenderloin', 'Mini Garden Turkey Loaves', 'joe’s special (my way)', 'slow cooker jerk chicken', 'Pesto Shrimp Pasta']
+Leaf
+['Sticky Ginger Chicken Wings']
+Internal Node
+Under $1.50 per serving
+Internal Node
+Onion
+Internal Node
+Olive Oil
+Leaf
+['Pasta with Eggplant Sauce', 'Chili Cornbread Skillet', 'BBQ Bean Sliders', 'Vegan Red Beans and Rice', 'Coconut Vegetable Curry', 'Tomato Spinach One Pot Pasta', 'Caramelized Onion & Mushroom White Pizza', 'Spinach and Artichoke Wonderpot', 'Chana Saag Curry – Chickpea and Spinach Curry', 'Golden Rice Bowls']
+Leaf
+['Weeknight Black Bean Chili', 'One Pot Roasted Red Pepper Pasta', 'Vegetable Alfredo Pasta Bake']
+Leaf
+['Creamy Spinach Artichoke Pizza', 'Sweet Potato Tacos with Lime Crema', 'Three Pepper Pasta with Crispy Pepperoni', 'Peanut Soba Stir Fry', 'Roasted Corn and Zucchini Tacos']
+Leaf
+['Tuscan White Bean Pasta', 'Cheesy Gnocchi Skillet', 'Spinach Artichoke Pasta', 'Sesame Glazed Salmon and Green Beans', 'Creamy Vegetarian Enchilada Pasta', 'Teriyaki Noodle Bowls', 'One Pot Veggie Pasta']
+Internal Node
+Under $1.50 per serving
+Internal Node
+Meat Recipes
+Internal Node
+Chicken Recipes
+Leaf
+['Slow Cooker Italian Chicken and Peppers', 'Honey Mustard Chicken Strips', 'Salsa Chicken Casserole', 'Creamy Pesto Pasta with Chicken and Broccoli', 'Sweet n’ Spicy Chicken Bowls', 'Chorizo Chicken Jambalaya']
+Leaf
+['Sautéed Beef Cabbage and Rice', 'Turkey Sriracha Meatballs', 'Orange Molasses Pork Chops', 'Sausage and Kale Skillet', 'Cheesy Sausage Pasta', '30 minute Posole']
+Leaf
+['Spicy Tuna Guacamole Bowls', 'zucchini pizza boats', '15-Minute Vegetable Curry', 'Vegetable Enchilada Casserole', 'Poor Man’s Burrito Bowls', 'Black Bean and Avocado Enchiladas', 'Country Breakfast Bowls', 'Spinach Lasagna Roll Ups']
+Internal Node
+Under $3 per serving
+Internal Node
+Garlic Powder
+Leaf
+['Honey Mustard Pork Chops', 'Roasted Brussels Sprout Bowls', 'Slow Cooker BBQ Chicken', 'Glazed Pork Chops', 'Easy Fish Tacos with Cumin Lime Slaw', 'Mini Black Bean Turkey Burgers', 'Marinated Portobello Mushroom Burgers', 'Apricot Dijon Pork Chops']
+Leaf
+['Pesto Stuffed Shells', 'Sushi Bowls', 'Blackberry Sage Pork Chops', 'Nacho Taters', 'Chorizo Sweet Potato Skillet']
+Leaf
+['Sweet Chili Tofu Bowls']
+Internal Node
+Under $1.50 per serving
+Internal Node
+Vegetarian Recipes
+Internal Node
+Vegetable Recipes
+Internal Node
+Egg Free Recipes
+Leaf
+['Maple Roasted Sweet Potatoes with Pecans', 'Date & Gorgonzola Stuffed Sweet Potatoes', 'Spinach and Mushroom Quesadillas', 'Apple Dijon Kale Salad', 'Indian Style Creamed Spinach', 'Broccoli Cheddar Casserole', 'Black Bean and Roasted Salsa Soup']
+Leaf
+['Chipotle Sweet Potato Burgers', 'Butternut Squash Pasta Salad', 'southwest salad with taco ranch dressing', 'Falafel Salad', 'Stuffed Poblano Peppers', 'Singapore Noodles']
+Leaf
+['Spinach Tortellini Soup', 'Mexican Red Lentil Stew', 'Easy Caprese Pizza', 'Southwest Breakfast Scramble', 'Spinach Mushroom French Bread Pizzas', 'Hummus Breakfast Tacos']
+Internal Node
+Garlic
+Leaf
+['Stromboli', 'Chicken & Pumpkin Soup', 'Loaded Potato Soup', 'Chicken and Lime Soup', 'Zuppa Toscana', 'Slow Cooker Chicken Ropa Vieja', 'Spicy Coconut and Pumpkin Soup', 'Roasted Red Pepper and Feta Frittata', 'Jalapeño Popper Mac & Cheese']
+Leaf
+['Kale & Chorizo Frittata', 'Holiday Wild Rice Dressing', 'The Pizza Roll Up Lunch Box', 'Curry Chicken Salad', 'Cheesy Loaded Cauliflower Casserole', 'Hawaiian Ham Quesadillas', 'BBQ Chicken Pizza']
+Internal Node
+Under $3 per serving
+Internal Node
+Gluten free Recipes
+Leaf
+['Crunchy Kale and Chicken Salad', 'Southwest Chicken Skillet', 'Taco Salad Skillet', 'Lemony Artichoke and Quinoa Salad', 'Louisiana Style Red Beans and Rice', 'Roasted Asparagus and Tomatoes', 'Spanish Chickpeas and Rice', 'Breakfast Nachos']
+Leaf
+['Pizzadillas', 'The Hummus Lunch Box', 'Loaded Hummus Pitas', 'Homemade Grilled Chicken Shawarma Wrap', 'Tilapia Fish Sticks', 'The Cheese Board Lunch Box', 'spring rolls & quick peanut sauce', 'Kale Chicken Caesar Wraps', 'Monterey Chicken Skillet']
+Leaf
+['Candied Almonds']
+Internal Node
+Garlic
+Internal Node
+Main Dish Recipes
+Internal Node
+Olive Oil
+Internal Node
+Onion
+Internal Node
+Meat Recipes
+Internal Node
+Recipes under $15
+Leaf
+['beef ragout with mashed cauliflower', 'Southwest Steak Bowls', 'creamy mushroom pasta w/ chicken', 'mediterranean tuna pasta', 'Chicken Stew', 'Hearty Meatball Soup', 'Oven Roasted Greek Stuffed Pitas', 'Slow Cooker Rosemary Garlic Beef Stew', 'Sloppy Joes Plus']
+Leaf
+['Sloppy Joes', 'Turkey and Stuffing Casserole']
+Leaf
+['Curried Chickpeas with Spinach', 'Salsa Poached Eggs', 'Easy Cauliflower and Chickpea Masala', 'Pasta Puttanesca', 'Sausage & Pepper Pasta']
+Leaf
+['Parsley Pesto Pasta with Blistered Tomatoes', 'turmeric chicken', 'Balsamic Chicken Thighs', 'Quick Lemon Garlic Fish', 'Honey Balsamic Chicken Tenders', 'Simple Portobella Pasta']
+Leaf
+['How to Make Thanksgiving Dinner for Two', 'One Pot Creamy Sun Dried Tomato Pasta', 'Sriracha Chicken Strips', 'moroccan beef stew', 'Slow Cooker White Chicken Chili', 'taco stuffed shells', 'teriyaki salmon with sriracha mayo', 'Garden Vegetable Lasagna Roll Ups', 'Chili Lime Shrimp Bowls', 'Slow Cooker Taco Chicken Bowls']
+Internal Node
+Egg Free Recipes
+Internal Node
+Under $1.50 per serving
+Leaf
+['Quick Garlic Parmesan Broccoli', 'Lemony Kale and Quinoa Salad', 'Smoky Tomato Soup', 'Herby Potato Salad', 'Green Gazpacho', 'Parsley Salad with Almonds and Apricots', 'Mediterranean White Bean Salad', 'Savory Oatmeal', 'Saucy Southwest Shredded Beef']
+Leaf
+['Creamy White Chicken Chili', 'Parsley Pesto Pasta', 'Spinach and Feta Grilled Cheese']
+Leaf
+['Shredded Taco Beef', 'Pasta with Creamy Pumpkin Sauce', 'Marinated Mushrooms']
+Internal Node
+Under $3 per serving
+Internal Node
+Meat Recipes
+Internal Node
+Main Dish Recipes
+Leaf
+['Coconut Chicken Strips with Sweet Chili Sauce', 'Salsa Chicken Meal Prep Bowls', 'Pressure Cooker Chicken and Rice', 'Mediterranean Turkey Burgers', 'Sheet Pan Chicken Fajitas', 'BBQ Chicken Kebabs', 'Oven Roasted Autumn Medley', 'BBQ Beef Stuffed Potatoes', 'Green Chile Turkey Burgers']
+Leaf
+['Meatball Sandwich', 'Multi-Purpose Shredded Beef', 'Teriyaki Pork Sandwiches']
+Leaf
+['Pesto Grilled Cheese with Sun Dried Tomatoes', 'Zucchini Sausage Ravioli', 'Caramelized Onion and Artichoke Flatbread', 'Easy White Spinach Pizza', 'Roasted Red Pepper Hummus Wrap', 'Spinach Artichoke Grilled Cheese', 'Strawberry Rosé Slush', 'Plum Salad with Lemon Ginger Dressing']
+Internal Node
+Under $1.50 per serving
+Internal Node
+Vegetarian Recipes
+Leaf
+['Banana Nut Breakfast Farro', 'Mediterranean Quesadillas', 'apple nut quinoa', 'roasted vegetable burritos', 'hummus & grilled vegetable pizza', 'Creamy Mushroom Soup', 'Spicy Sriracha Noodles']
+Leaf
+['Coconut Chicken Soup', 'Freezer Friendly Breakfast Burritos', 'Zesty Tomato & Artichoke Pasta', 'Honey Mustard Chicken Salad', 'avocado breakfast pita', 'thai chicken pizza', 'Sesame Tuna Salad']
+Leaf
+['The Peanut Butter Lunch Box', 'How to Cook Bacon in the Oven', 'Pineapple Sriracha Breakfast Bowls', 'Roasted Apple Cranberry Cornbread Stuffing', 'How to Freeze Green Onions', 'The Bagel Lunch Box', 'How to Make Hard Boiled Eggs', 'Leftover Stuffing Muffins', 'How to Make Baked Potatoes']
