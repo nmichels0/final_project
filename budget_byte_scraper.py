@@ -4,6 +4,7 @@ import json
 import csv
 from fractions import Fraction
 import re
+from fpdf import FPDF
 
 def read_csv(filepath, encoding='utf-8-sig'):
     """
@@ -387,12 +388,15 @@ def collect_keywords(soup):
     keywords = script_data['keywords']
     articles = script_data['articleSection']
 
-    # Need to fix one article and remove one article
-    for i, article in enumerate(articles):
+    # Need to fix one article and remove unwanted articles
+    for i, article in enumerate(articles[:]):
         if article == 'Bean &amp; Grain Recipes':
-            articles[i] = 'Bean & Grain Recipes'
+            articles.remove('Bean &amp; Grain Recipes')
+            articles.append('Bean & Grain Recipes')
         elif article == 'Recipes':
-            keywords[i].pop()
+            articles.remove(article)
+        elif 'under' in article.lower():
+            articles.remove(article)
 
     return keywords, articles
 
@@ -411,7 +415,7 @@ def recipe_scraper(url):
     soup = BeautifulSoup(html_text, 'lxml')
 
     # Collect name
-    name = soup.find('h1', class_ = 'entry-title').text
+    name = soup.find('h1', class_ = 'entry-title').text.lower()
 
     # Collect Costs
     recipe_cost, serving_cost = collect_costs(soup)
@@ -460,34 +464,6 @@ def clean_recipes(recipes):
                      if len(recipe_data['ingredients']) > 0 and len(recipe_data['instructions']) > 0}
 
     return clean_recipes
-
-def grocery_list(recipes):
-    '''Builds a grocery list for provided recipes
-
-    Goes through each recipe to determine amount and category of each
-    ingredient that is needed. Determines category of each ingredient.
-
-    Parameters:
-        recipes (list): List of recipe dictionaries
-
-    Returns:
-        grocery_list (dict): Categorized ingredients with quantities needed
-    '''
-    grocery_list = []
-    # groery_list = [['rice', 1, 'cup'], ['apple, 2, 'oz'], ['flour', 2, 'oz']]
-    for recipe in recipes:
-        for ingredient, data in recipe['ingredients'].items():
-            temp = [ingredient, data['amount'], data['unit']]
-            new_grocery = True
-            for i, grocery in enumerate(grocery_list):
-                if grocery[0] == temp[0] and grocery[2] == temp[2]:
-                    grocery_list[i][1] += temp[1]
-                    new_grocery = False
-                    break
-            if new_grocery == True:
-                grocery_list.append(temp)
-
-        grocery_list.sort(key=lambda x: x[1]) # Alphabetical sort
 
 def keywords_counter(recipes):
     '''
@@ -684,9 +660,88 @@ def loadTreeWrap(treeFile):
     loadTree(treeFile)
     treeFile.close()
 
+def printNames(names):
+    '''
+    Prints recipe names in a user-friendly way.
 
-def main():
+    Parameters:
+        names (list): list with recipes names data
 
+    Returns:
+        None
+    '''
+    for number, name in enumerate(names):
+        print(number+1, name)
+
+def printPlan(meals):
+    '''
+    Prints key information about the meal plan that has built so far.
+
+    Parameters:
+        meals (dict): Dictionary containing recipes to be added to the meal plan
+
+    Returns:
+        None
+    '''
+    meal_list = []
+    for meal, data in meals.items():
+        cost = data['cost']['recipe']
+        meal_list.append([meal, f'${cost}', data['servings']])
+
+    for title in ['Recipe', 'Cost', 'Servings']:
+        print('{0:<30}'.format(title), end='')
+
+    print()
+    for meal in meal_list:
+        for item in meal:
+            print('{0:<30}'.format(item), end='')
+        print()
+
+def simplePlay(tree):
+    '''Accepts a tree & helps user find recipe they are interested in
+
+    Recursive function that asks a series of questions to a user before
+    recommending the user a recipe.
+
+    Parameters:
+        tree (tuple): tree tuple that is either a question (internal) or answer (leaf) node.
+
+    Returns:
+        meal (str): Returns meal name if one is selected or None if the user wants to start over
+    '''
+    print(f'We will go through a list of ingredients and articles related to the recipes. If you want recipes with these ingredients, answer yes. Similarly, answer no if you are not interested in these ingredients or recipe types.')
+    if (tree[1] == None) and (tree[2] == None): #If tree node is answer/leaf
+        length = len(tree[0])
+        while True:
+            print(f'Type a number 1-{length} to select the recipe you want to add, or type “try again” to start over: ')
+            printNames(tree[0])
+            response = input().strip().lower()
+            if response in [str(x) for x in range(1, length + 1)]:
+                return tree[0][int(response)-1]
+            elif response == 'try again':
+                return None
+            else:
+                print(f'Type a number 1-{length} to select the recipe you want to add, or type “try again” to start over: ', end ='')
+    else: #Tree node is question/internal
+        print(f'Would you like {tree[0]}?')
+        if answer() == True:
+            return simplePlay(tree[1])
+        else:
+            return simplePlay(tree[2])
+
+def initialize_data():
+    '''Prepares all of the data for the program
+
+    Collects URLs if necessary, collects recipe data if necessary, makes tree
+    data structure if necessary
+
+    Parameters:
+        None
+
+    Returns:
+        recipe_data (dict): Dictionary of all recipes
+        tree (tuple): Tree data structure for recipe recommendations
+    '''
     try: # Check cache for recipe data
         recipe_data = read_json('recipe_data.json')
     except: # Scrape new recipe data
@@ -704,12 +759,157 @@ def main():
         recipe_data = clean_recipes(recipe_data)
         write_json('recipe_data.json', recipe_data)
 
-
     try:
         tree = loadTreeWrap('recipeTree.txt')
     except:
         tree = recipe_tree(recipe_data)
         saveTreeWrap(tree, 'recipeTree.txt')
+
+    return recipe_data, tree
+
+def meal_plan_builder(recipe_data, tree):
+    '''Takes user input to build a meal plan
+
+    Parameters:
+        recipe_data (dict): Dictionary of all recipes
+        tree (tuple): Tree data structure for recipe recommendations
+
+    Returns:
+        meals (dict): Dictionary containing recipes added to the meal plan
+    '''
+    # Initialize variables
+    meals = {}
+    finished = False
+    manual = ['manual', 'manually']
+    recommend = ['recommend', 'recommendation', 'recommendations', 'recommended']
+
+    #Print Welcome message
+    print(f'Hi and welcome to the Meal Planner! Let\'s get started by adding a recipe to your meal plan!', end = ' ')
+
+    # Begin meal plan loop
+    while finished == False:
+        while True:
+            print(f'Would you like to add the meal manually or do you want help with recommendations?')
+            method = input().lower().strip()
+            if method in manual or method in recommend:
+                break
+            else:
+                print(f'Please answer with either \'manual\' or \'recommend\' when prompted.', end = ' ')
+        if method in manual:
+            while True:
+                print(f'What is the name of the meal you would like to add?')
+                meal = input().lower().strip()
+                if meal in recipe_data:
+                    meals[meal] = recipe_data[meal]
+                    print(f'Great! {meal.title()} has been added to your meal plan! Here is your meal plan so far: ')
+                    printPlan(meals)
+                    break
+                else:
+                    print(f'It seems like that recipe isn\'t available. Try something else.')
+
+        elif method in recommend:
+            while True:
+                meal = simplePlay(tree)
+                if meal != None:
+                    meals[meal] = recipe_data[meal]
+                    print(f'Great! {meal.title()} has been added to your meal plan! Here is your meal plan so far: ')
+                    printPlan(meals)
+                    break
+
+        print(f'Type \'finished\' if you are done with your meal plan, otherwise enter anything else to continue.')
+        response = input().lower().strip()
+        if response == 'finished':
+            finished = True
+
+    return meals
+
+def grocery_list(recipes):
+    '''Builds a grocery list for provided recipes
+
+    Goes through each recipe to determine amount and category of each
+    ingredient that is needed. Determines category of each ingredient.
+
+    Parameters:
+        recipes (list): List of recipe dictionaries
+
+    Returns:
+        grocery_list (dict): Categorized ingredients with quantities needed
+    '''
+    grocery_list = []
+    # groery_list = [['rice', 1, 'cup'], ['apple, 2, 'oz'], ['flour', 2, 'oz']]
+    for recipe in recipes:
+        for ingredient, data in recipe['ingredients'].items():
+            temp = [ingredient, data['amount'], data['unit']]
+            new_grocery = True
+            for i, grocery in enumerate(grocery_list):
+                if grocery[0] == temp[0] and grocery[2] == temp[2]:
+                    grocery_list[i][1] += temp[1]
+                    new_grocery = False
+                    break
+            if new_grocery == True:
+                grocery_list.append(temp)
+
+        grocery_list.sort(key=lambda x: x[1]) # Alphabetical sort
+
+class PDF(FPDF):
+    def recipe_title(self, recipe_name):
+        # Arial Bold Italic 32
+        self.set_font('Arial', 'BI', 36)
+        # Title
+        self.multi_cell(0, 12, f'{recipe_name}', 0, 'C')
+        # Line break
+        self.ln(4)
+
+    def recipe_info(self, recipe_data):
+        # Arial Bold 12
+        self.set_font('Arial', 'B', 12)
+        # self.cell(0, 20, 'Servings   Prep Time   Cook Time   Total Time', 'TB', 1, 'C')
+        self.cell(0, 10, f"{'Servings':30s} {'Prep Time':30s} {'Cook Time':30s} {'Total Time'}", 'T', 1, 'C')
+        servings = str(recipe_data['servings'])
+        prep_time = f"{recipe_data['time']['prep_hours']} hours {recipe_data['time']['prep_mins']} mins"
+        cook_time = f"{recipe_data['time']['cook_hours']} hours {recipe_data['time']['cook_mins']} mins"
+        total_time = f"{recipe_data['time']['total_hours']} hours {recipe_data['time']['total_mins']} mins"
+        # Arial 12
+        self.set_font('Arial', '', 12)
+        self.cell(0, 5, f"{'':18s} {servings:25s} {prep_time:29s} {cook_time:28s} {total_time}", 'B', 1, 'L')
+        self.cell(0,5, '', 0, 1)
+
+
+    def recipe_ingredients(self, recipe_data):
+        # Arial Bold Underlined 10
+        self.set_font('Arial', 'BU', 10)
+        self.cell(0, 4, f'INGREDIENTS', 0, 1)
+        # Arial Bold 10
+        self.set_font('Arial', 'B', 10)
+        # Print each ingredient on left side of page
+        for ingredient, data in recipe_data['ingredients'].items():
+            if data['unit'] == None:
+                self.cell(0, 10, f'{data["amount"]} {ingredient}', 0, 1)
+            else:
+                self.cell(0, 10, f'{data["amount"]} {data["unit"]} {ingredient}', 0, 1)
+
+def main():
+
+    # # Get recipe data & tree data strucutre
+    recipe_data, tree = initialize_data()
+
+    # # Build a meal plan
+    # meals = meal_plan_builder(recipe_data, tree)
+
+
+    # # Determine groceries needed
+    # groceries = grocery_list(meals)
+
+    # Build PDF
+    pdf = PDF()
+    pdf.add_page()
+    pdf.recipe_title('Teriyaki Meatball Bowls')
+    pdf.recipe_info(recipe_data['teriyaki meatball bowls'])
+    pdf.recipe_ingredients(recipe_data['teriyaki meatball bowls'])
+
+    pdf.add_page()
+    pdf.recipe_title('Vegan Peanut Stew blah blah blah blah')
+    pdf.output('test.pdf','F')
 
 
     print('sup\nsup\nsup')
