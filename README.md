@@ -21,3 +21,9 @@ Once the data is ready, the program will ask if you want to add a meal manually 
 
 When the user is finished adding recipes to their meal plan, the program will save the meal plan to meal_plan.pdf.
 
+<!-- TREE DATA STRUCTURE -->
+## Tree Data Structure
+
+The tree data structure helps users decide upon a subset of recipes by asking a series of questions related to keywords. The order in which these keywords are asked is determined based on the frequency at which each word appears. This helps to ensure larger recipe categories are separated early on. Essentially questions such as "How about vegetarian?" will be asked long before "How about alfalfa beans?" so that users are able to slowly narrow down to the recipe they want. 
+
+It should be noted that the tree data structure only stores the recipe names in the answer nodes and keywords in the internal nodes. This helps reduce the data size of the tree since. Once the recipe names are determined, we can then just search the dictionary of recipe data for the rest of the information that we need. 
