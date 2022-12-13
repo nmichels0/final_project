@@ -388,12 +388,13 @@ def collect_keywords(soup):
     keywords = script_data['keywords']
     articles = script_data['articleSection']
 
-    # Need to fix one article and remove unwanted articles
+    # Need to fix one article and remove unwanted/vague articles
+    unwanted = ['Recipes', 'Fall Recipes', 'Quick Recipes', 'Sauce Recipes', 'Comfort Food Recipes', 'Side Dish Recipes', 'Budget Friendly Meal Prep', 'Globally Inspired Recipes', 'Main Dish Recipes', 'Vegetarian Meal Prep Recipes', 'Winter Recipes', 'SNAP Challenge', 'Quick Pasta Recipes', 'Bowl Meals', 'No-Cook Recipes', 'Spring Recipes', 'Summer Recipes', 'Appetizer Recipes', 'Holiday Recipes']
     for i, article in enumerate(articles[:]):
         if article == 'Bean &amp; Grain Recipes':
             articles.remove('Bean &amp; Grain Recipes')
             articles.append('Bean & Grain Recipes')
-        elif article == 'Recipes':
+        elif article in unwanted:
             articles.remove(article)
         elif 'under' in article.lower():
             articles.remove(article)
@@ -689,12 +690,12 @@ def printPlan(meals):
         meal_list.append([meal, f'${cost}', data['servings']])
 
     for title in ['Recipe', 'Cost', 'Servings']:
-        print('{0:<30}'.format(title), end='')
+        print('{0:<40}'.format(title), end='')
 
     print()
     for meal in meal_list:
         for item in meal:
-            print('{0:<30}'.format(item), end='')
+            print('{0:<40}'.format(item), end='')
         print()
 
 def simplePlay(tree):
@@ -780,8 +781,8 @@ def meal_plan_builder(recipe_data, tree):
     # Initialize variables
     meals = {}
     finished = False
-    manual = ['manual', 'manually']
-    recommend = ['recommend', 'recommendation', 'recommendations', 'recommended']
+    manual = ['man', 'manual', 'manually']
+    recommend = ['rec', 'recommend', 'recommendation', 'recommendations', 'recommended']
 
     #Print Welcome message
     print(f'Hi and welcome to the Meal Planner! Let\'s get started by adding a recipe to your meal plan!', end = ' ')
@@ -789,7 +790,7 @@ def meal_plan_builder(recipe_data, tree):
     # Begin meal plan loop
     while finished == False:
         while True:
-            print(f'Would you like to add the meal manually or do you want help with recommendations?')
+            print(f'Would you like to add a meal manually or do you want some recommendations?')
             method = input().lower().strip()
             if method in manual or method in recommend:
                 break
@@ -837,7 +838,7 @@ def grocery_list(recipes):
     '''
     grocery_list = []
     # groery_list = [['rice', 1, 'cup'], ['apple, 2, 'oz'], ['flour', 2, 'oz']]
-    for recipe in recipes:
+    for recipe in recipes.values():
         for ingredient, data in recipe['ingredients'].items():
             temp = [ingredient, data['amount'], data['unit']]
             new_grocery = True
@@ -849,22 +850,67 @@ def grocery_list(recipes):
             if new_grocery == True:
                 grocery_list.append(temp)
 
-        grocery_list.sort(key=lambda x: x[1]) # Alphabetical sort
+    grocery_list.sort(key=lambda x: x[0]) # Alphabetical sort
+    return grocery_list
 
 class PDF(FPDF):
+    def footer(self):
+        # Position at 1.5 cm from bottom
+        self.set_y(-15)
+        # Arial italic 8
+        self.set_font('Arial', 'I', 8)
+        # Page number
+        self.cell(0, 10, 'Page ' + str(self.page_no()) + '/{nb}', 0, 0, 'C')
+
     def recipe_title(self, recipe_name):
         # Arial Bold Italic 32
         self.set_font('Arial', 'BI', 36)
         # Title
-        self.multi_cell(0, 12, f'{recipe_name}', 0, 'C')
+        self.multi_cell(0, 12, f'{recipe_name.title()}', 0, 'C')
         # Line break
         self.ln(4)
+
+    def recipe_grocery(self, groceries):
+        # Arial Bold Italic 32
+        self.set_font('Arial', 'BIU', 36)
+        # Title
+        self.multi_cell(0, 12, f'GROCERY LIST', 0, 'C')
+        # Line break
+        self.ln(4)
+        # Arial Bold Italic Underlined 10
+        y_orig = self.get_y()
+        x_orig = self.get_x()
+        x_pos = self.get_x()
+        self.set_font('Arial', '', 10)
+        columns = 1
+        # Print each ingredient
+        for i, grocery in enumerate(groceries):
+            self.set_x(x_pos)
+            # Arial Bold 10
+            if grocery[1] == None and grocery[2] == None:
+                self.multi_cell(0, 7, f'{grocery[0]}', 0)
+            elif grocery[1] == None:
+                self.multi_cell(0, 7, f'{grocery[2]} {grocery[0]}', 0)
+            elif grocery[2] == None:
+                self.multi_cell(0, 7, f'{grocery[1]} {grocery[0]}', 0)
+            else:
+                self.multi_cell(0, 7, f'{grocery[1]} {grocery[2]} {grocery[0]}', 0)
+            y_temp = self.get_y()
+            if y_temp >= 260:
+                columns += 1
+                if columns > 3:
+                    self.add_page()
+                    x_pos = x_orig
+                    self.set_xy(x_orig, y_orig)
+                else:
+                    x_pos += 50
+                    self.set_y(y_orig)
 
     def recipe_info(self, recipe_data):
         # Arial Bold 12
         self.set_font('Arial', 'B', 12)
         # self.cell(0, 20, 'Servings   Prep Time   Cook Time   Total Time', 'TB', 1, 'C')
-        self.cell(0, 10, f"{'Servings':30s} {'Prep Time':30s} {'Cook Time':30s} {'Total Time'}", 'T', 1, 'C')
+        self.cell(0, 5, f"{'Servings':30s} {'Prep Time':30s} {'Cook Time':30s} {'Total Time'}", 'T', 1, 'C')
         servings = str(recipe_data['servings'])
         prep_time = f"{recipe_data['time']['prep_hours']} hours {recipe_data['time']['prep_mins']} mins"
         cook_time = f"{recipe_data['time']['cook_hours']} hours {recipe_data['time']['cook_mins']} mins"
@@ -874,47 +920,80 @@ class PDF(FPDF):
         self.cell(0, 5, f"{'':18s} {servings:25s} {prep_time:29s} {cook_time:28s} {total_time}", 'B', 1, 'L')
         self.cell(0,5, '', 0, 1)
 
-
     def recipe_ingredients(self, recipe_data):
-        # Arial Bold Underlined 10
-        self.set_font('Arial', 'BU', 10)
-        self.cell(0, 4, f'INGREDIENTS', 0, 1)
+        # Arial Bold Italic Underlined 10
+        self.set_font('Arial', 'BIU', 10)
+        self.cell(0, 5, f'INGREDIENTS', 0, 1)
         # Arial Bold 10
         self.set_font('Arial', 'B', 10)
         # Print each ingredient on left side of page
         for ingredient, data in recipe_data['ingredients'].items():
-            if data['unit'] == None:
-                self.cell(0, 10, f'{data["amount"]} {ingredient}', 0, 1)
+            if data['unit'] == None and data['amount'] == None:
+                self.multi_cell(60, 4, f'{ingredient}', 0, 1)
+            elif data['unit'] == None:
+                self.multi_cell(60, 4, f'{data["amount"]} {ingredient}', 0, 1)
+            elif data['amount'] == None:
+                self.multi_cell(60, 4, f'{data["unit"]} {ingredient}', 0, 1)
             else:
-                self.cell(0, 10, f'{data["amount"]} {data["unit"]} {ingredient}', 0, 1)
+                self.multi_cell(60, 4, f'{data["amount"]} {data["unit"]} {ingredient}', 0, 1)
+
+            self.cell(0,4, '', 0, 1)
+
+    def recipe_instructions(self, recipe_data, y_top):
+        # Arial Bold Italic Underlined 10
+        self.set_xy(65, y_top)
+        self.set_font('Arial', 'BIU', 10)
+        self.cell(0, 5, f'INSTRUCTIONS', 0, 1)
+        self.set_x(65)
+        # Print each ingredient on left side of page
+        for i, instruction in enumerate(recipe_data['instructions']):
+            # Arial Bold 10
+            self.set_font('Arial', 'B', 10)
+            self.multi_cell(0, 7, f'{i+1}. ', 0)
+            y_temp = self.get_y()
+            self.set_xy(70,y_temp-7)
+            self.set_font('Arial', '', 10)
+            self.multi_cell(0, 7, f'{instruction}', 0)
+            y_temp = self.get_y()
+            self.set_xy(65, y_temp+3)
+
 
 def main():
 
-    # # Get recipe data & tree data strucutre
+    # Get recipe data & tree data strucutre
     recipe_data, tree = initialize_data()
 
     # # Build a meal plan
-    # meals = meal_plan_builder(recipe_data, tree)
+    meals = meal_plan_builder(recipe_data, tree)
 
+    # meals = {'teriyaki meatball bowls': recipe_data['teriyaki meatball bowls'],
+    #          'bbq beef and beans': recipe_data['bbq beef and beans'],
+    #          'easy taco rice': recipe_data['easy taco rice']}
 
-    # # Determine groceries needed
-    # groceries = grocery_list(meals)
+    # Determine groceries needed
+    groceries = grocery_list(meals)
 
     # Build PDF
     pdf = PDF()
+    pdf.alias_nb_pages()
     pdf.add_page()
-    pdf.recipe_title('Teriyaki Meatball Bowls')
-    pdf.recipe_info(recipe_data['teriyaki meatball bowls'])
-    pdf.recipe_ingredients(recipe_data['teriyaki meatball bowls'])
-
+    # Grocery PDF page should add here
+    # pdf.recipe_title('GROCERY LIST')
+    pdf.recipe_grocery(groceries)
     pdf.add_page()
-    pdf.recipe_title('Vegan Peanut Stew blah blah blah blah')
-    pdf.output('test.pdf','F')
+    # Loop Begins here for each Recipe
+    for i, (meal, recipe) in enumerate(meals.items()):
+        pdf.recipe_title(meal)
+        pdf.recipe_info(recipe)
+        y_top = pdf.get_y()
+        pdf.recipe_ingredients(recipe)
+        pdf.recipe_instructions(recipe, y_top)
+        if i != len(meals)-1:
+            pdf.add_page()
 
 
-    print('sup\nsup\nsup')
-
-
+    pdf.output('meal_plan.pdf','F')
+    print('Your meal plan has been saved!')
 
 if __name__ == '__main__':
     main()
