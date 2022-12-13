@@ -966,10 +966,6 @@ def main():
     # # Build a meal plan
     meals = meal_plan_builder(recipe_data, tree)
 
-    # meals = {'teriyaki meatball bowls': recipe_data['teriyaki meatball bowls'],
-    #          'bbq beef and beans': recipe_data['bbq beef and beans'],
-    #          'easy taco rice': recipe_data['easy taco rice']}
-
     # Determine groceries needed
     groceries = grocery_list(meals)
 
@@ -990,7 +986,6 @@ def main():
         pdf.recipe_instructions(recipe, y_top)
         if i != len(meals)-1:
             pdf.add_page()
-
 
     pdf.output('meal_plan.pdf','F')
     print('Your meal plan has been saved!')
